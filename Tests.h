@@ -2,6 +2,7 @@
 #define TESTS_H
 
 #include "ColorPair.h"
+#include <sstream>
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -11,5 +12,7 @@ void testPairToNumber(
     TelCoColorCoder::MajorColor major,
     TelCoColorCoder::MinorColor minor,
     int expectedPairNumber);
+    
+void testPrintColorPairs(std::string& testString);
     
 #endif

@@ -22,3 +22,10 @@ void testPairToNumber(
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
+
+void testPrintColorPairs(std::string& testString)
+{
+    std::ostringstream outputBuffer = TelCoColorCoder::PrintColorPairs();
+    std::cout << "Got list\n" << outputBuffer.str() << std::endl;
+    assert(testString == outputBuffer.str());
+}

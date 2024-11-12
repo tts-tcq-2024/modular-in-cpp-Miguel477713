@@ -7,6 +7,7 @@ namespace TelCoColorCoder {
     
     int numberOfMajorColors = sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
     int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+    const int totalPairColors = (numberOfMajorColors - 1) * numberOfMinorColors + numberOfMinorColors;
     
     MajorColor ColorPair::getMajor() {
         return majorColor;
